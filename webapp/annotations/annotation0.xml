@@ -1,0 +1,41 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+	<edmx:Reference Uri="/sap/opu/odata/sap/ZC_FORMULARIO_CDS/$metadata">
+		<edmx:Include Alias="Metadata" Namespace="ZC_FORMULARIO_CDS"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470968/UI.xml?api=v2">
+		<edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+	</edmx:Reference>
+	<edmx:DataServices>
+		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="ZFORMULARIO_UI5.annotations.annotation0.ZC_FORMULARIO_CDS">
+			<Annotations Target="Metadata.ZC_FORMULARIOType">
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="nombre"/>
+							<PropertyValue Property="Label" String="Name"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="apellido"/>
+							<PropertyValue Property="Label" String="Surname"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="dni"/>
+							<PropertyValue Property="Label" String="ID"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="movil"/>
+							<PropertyValue Property="Label" String="Mobile Phone"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="direccion"/>
+							<PropertyValue Property="Label" String="Email"/>
+						</Record>
+					</Collection>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="Metadata.ZC_FORMULARIOType/Crear_registro_ac">
+				<Annotation Term="UI.Hidden" Bool="true"/>
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

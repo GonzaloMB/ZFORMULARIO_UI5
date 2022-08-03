@@ -1,0 +1,82 @@
+<mvc:View controllerName="ZFORMULARIO_UI5.ZFORMULARIO_UI5.controller.View1" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+	xmlns:smartTable="sap.ui.comp.smarttable" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns:tnt="sap.tnt">
+	<tnt:ToolHeader id="toolHeader">
+		<core:Icon src="sap-icon://sap-ui5" id="iconHeader"/>
+		<Text text="UI5 FORM" id="textHeader"/>
+	</tnt:ToolHeader>
+	<VBox class="sapUiSmallMargin">
+		<f:Form id="FormToolbar" editable="true" ariaLabelledBy="Title1">
+			<f:toolbar>
+				<Toolbar id="TB1">
+					<core:Icon src="sap-icon://form" id="iconForm"/>
+					<Title id="Title1" text="User Creation"/>
+					<ToolbarSpacer/>
+					<Button id="btnCrear" text="Save" icon="sap-icon://add" press="onCrear"/>
+				</Toolbar>
+			</f:toolbar>
+			<f:layout>
+				<f:ResponsiveGridLayout labelSpanXL="4" labelSpanL="3" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4"
+					emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
+			</f:layout>
+			<f:formContainers>
+				<f:FormContainer ariaLabelledBy="Title2" id="personalInformationBox">
+					<f:toolbar >
+						<Toolbar id="personalInformationToolbar">
+							<Title id="Title2" text="Personal Information"/>
+						</Toolbar>
+					</f:toolbar>
+					<f:formElements>
+						<f:FormElement label="Name">
+							<f:fields >
+								<Input id="Nombre" required="true" placeholder="Enter Name"/>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="Surname">
+							<f:fields>
+								<Input id="Apellido" required="true" placeholder="Enter Surname"/>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="ID">
+							<f:fields>
+								<Input id="DNI" required="true" placeholder="Enter ID"/>
+							</f:fields>
+						</f:FormElement>
+					</f:formElements>
+				</f:FormContainer>
+				<f:FormContainer ariaLabelledBy="Title3" id="contactDetailsBox">
+					<f:toolbar>
+						<Toolbar id="contactDetailsToolbar">
+							<Title id="Title3" text="Contact Details"/>
+						</Toolbar>
+					</f:toolbar>
+					<f:formElements>
+						<f:FormElement label="Mobile Phone">
+							<f:fields>
+								<Input id="Movil" type="Number"  placeholder="Enter Mobile Phone"/>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="Email">
+							<f:fields>
+								<Input id="Mail" type="Email"  placeholder="Enter Email"/>
+							</f:fields>
+						</f:FormElement>
+					</f:formElements>
+				</f:FormContainer>
+			</f:formContainers>
+		</f:Form>
+	</VBox>
+	<VBox fitContainer="true">
+		<smartTable:SmartTable id="LineItemsSmartTable" entitySet="ZC_FORMULARIO" tableType="Table" demandPopin="true" useExportToExcel="true"
+			beforeExport="onBeforeExport" useVariantManagement="true" useTablePersonalisation="true" header="Users" showRowCount="true"
+			persistencyKey="SmartTableAnalytical_Explored" enableAutoBinding="true" class="sapUiResponsiveContentPadding">
+			<smartTable:customToolbar id="customToolbar">
+				<OverflowToolbar design="Transparent" id="OverflowToolbar">
+					<ToolbarSpacer/>
+					<OverflowToolbarButton icon="sap-icon://delete" tooltip="Delete Record" press="eliminarRegistro"/>
+				</OverflowToolbar>
+			</smartTable:customToolbar>
+		</smartTable:SmartTable>
+	</VBox>
+</mvc:View>

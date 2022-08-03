@@ -1,0 +1,180 @@
+body {
+    background-color: #f2e9e4;
+}
+
+.sapMLabel .sapMLabelColonAndRequired {
+    display: none;
+}
+
+div#container-ZFORMULARIO_UI5---View1--toolHeader {
+    background-color: #4a4e69;
+    display: flex;
+    border: none;
+}
+
+div#container-ZFORMULARIO_UI5---View1--TB1 {
+    border: none;
+    background: #c3c6d5;
+    color: #22223b;
+    border-radius: 8rem;
+    box-shadow: 3px 3px 3px rgb(0 0 0 / 15%);
+}
+
+span#container-ZFORMULARIO_UI5---View1--btnCrear-inner {
+    cursor: pointer;
+    border: none;
+    background: #ffb685;
+    border-radius: 8rem;
+    color: #fff;
+}
+
+span#container-ZFORMULARIO_UI5---View1--btnCrear-inner:hover {
+    background: #fff;
+    color: #ffb685;
+}
+
+span#container-ZFORMULARIO_UI5---View1--btnCrear-img {
+    color: #fff;
+}
+
+span#container-ZFORMULARIO_UI5---View1--btnCrear-img:hover {
+    color: #ffb685;
+}
+
+span#container-ZFORMULARIO_UI5---View1--Title1-inner {
+    font-size: 20px;
+}
+
+span#container-ZFORMULARIO_UI5---View1--iconForm {
+    font-size: 20px;
+}
+
+span#container-ZFORMULARIO_UI5---View1--iconHeader {
+    font-size: 30px;
+    color: #ffb685;
+}
+
+span#container-ZFORMULARIO_UI5---View1--textHeader {
+    font-size: 20px;
+    color: #ffb685;
+}
+
+div#container-ZFORMULARIO_UI5---View1--personalInformationBox---Panel {
+    border-radius: 1rem;
+    background: #fef3eb;
+    box-shadow: 5px 8px 5px rgb(0 0 0 / 20%);
+}
+
+div#container-ZFORMULARIO_UI5---View1--FormToolbar--Grid-wrapperfor-container-ZFORMULARIO_UI5---View1--contactDetailsBox---Panel {
+    border-radius: 1rem;
+    background: #fef3eb;
+    box-shadow: 5px 8px 5px rgb(0 0 0 / 20%);
+}
+
+div#container-ZFORMULARIO_UI5---View1--Nombre-content {
+    border: none;
+    background: #c3c6d5;
+    color: #22223b;
+    border-radius: 8rem;
+}
+
+div#container-ZFORMULARIO_UI5---View1--Apellido-content {
+    border: none;
+    background: #c3c6d5;
+    color: #22223b;
+    border-radius: 8rem;
+}
+
+div#container-ZFORMULARIO_UI5---View1--DNI-content {
+    border: none;
+    background: #c3c6d5;
+    color: #22223b;
+    border-radius: 8rem;
+}
+
+div#container-ZFORMULARIO_UI5---View1--Movil-content {
+    border: none;
+    background: #c3c6d5;
+    color: #22223b;
+    border-radius: 8rem;
+}
+
+div#container-ZFORMULARIO_UI5---View1--Mail-content {
+    border: none;
+    background: #c3c6d5;
+    color: #22223b;
+    border-radius: 8rem;
+}
+
+div#container-ZFORMULARIO_UI5---View1--personalInformationToolbar {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #4a4e69;
+}
+
+div#container-ZFORMULARIO_UI5---View1--contactDetailsToolbar {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #4a4e69;
+}
+
+span#container-ZFORMULARIO_UI5---View1--Title2-inner {
+    color: white;
+}
+
+span#container-ZFORMULARIO_UI5---View1--Title3-inner {
+    color: white;
+}
+
+div#container-ZFORMULARIO_UI5---View1--OverflowToolbar {
+    border: none;
+    background: #ffb685;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 5px 8px 5px rgb(0 0 0 / 20%);
+}
+
+span#container-ZFORMULARIO_UI5---View1--LineItemsSmartTable-header-inner {
+    color: white;
+}
+
+div#container-ZFORMULARIO_UI5---View1--LineItemsSmartTable-ui5table {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 5px 8px 5px rgb(0 0 0 / 20%);
+}
+
+.sapUiTableSelectAllCheckBox::after,
+.sapUiTableRowSelectionCell::after {
+    background-color: #ffb685 !important;
+    color: #fff !important;
+}
+
+.sapMMessageToast {
+    box-sizing: unset;
+    border: none;
+    background: #ffb685;
+    color: #fff;
+    border-radius: 8rem;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+bdi#__element0-label-bdi:before {
+    content: "*" !important;
+    color: red !important;
+    font-weight: bold !important;
+}
+
+bdi#__element1-label-bdi:before {
+    content: "*" !important;
+    color: red !important;
+    font-weight: bold !important;
+}
+
+bdi#__element2-label-bdi:before {
+    content: "*" !important;
+    color: red !important;
+    font-weight: bold !important;
+}
