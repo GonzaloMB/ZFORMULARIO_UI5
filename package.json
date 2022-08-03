@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "description": "",
   "devDependencies": {
-    "@sap/ui5-builder-webide-extension": "1.0.x",
-    "@ui5/cli": "^2.14.1",
+    "@sap/ui5-builder-webide-extension": "^1.1.8",
     "@sap/ux-ui5-tooling": "1",
+    "@ui5/cli": "^2.14.1",
     "rimraf": "3.0.2"
   },
   "scripts": {
