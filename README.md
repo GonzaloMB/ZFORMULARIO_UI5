@@ -33,7 +33,24 @@ _In this application we are going to develop both the back-end and the front-end
 
 ### Back-end 🔩
 #### 1. ABAP CDS
-* **TRANSACTIONAL:** From this view we will consume and activate both the oData and the BOPF, being able to also give annotations for visualization from the front-end 
+* **TRANSACTIONAL:** From this view we will consume the table created previously in SAP Logon
+```abap
+@AbapCatalog.sqlViewName: 'ZTFORMULARIO'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #CHECK
+@EndUserText.label: 'CDS Formulario Transaccional'
+@VDM.viewType: #TRANSACTIONAL
+define view ZT_FORMULARIO as select from zformulario_ui5 {
+    key nombre,
+    key apellido,
+    key dni,
+    movil,
+    direccion
+}
+
+```
+* **CONSUMITION:** From this view we will consume and activate both the oData and the BOPF, being able to also give annotations for visualization from the front-end 
 ```abap
 @AbapCatalog.sqlViewName: 'ZCFORMULARIO'
 @AbapCatalog.compiler.compareFilter: true
